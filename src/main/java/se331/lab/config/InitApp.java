@@ -26,7 +26,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .date("3rd Sept")
                 .time("3.00-4.00 pm.")
                 .petAllowed(false)
-                .organizer("CAMT").build());
+                .build());
         eventRepository.save(Event.builder()
                 .category("Academic")
                 .title("Commencement Exam")
@@ -35,7 +35,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .date("21th Jan")
                 .time("8.00am-4.00 pm.")
                 .petAllowed(false)
-                .organizer("CMU").build());
+                .build());
         eventRepository.save(Event.builder()
                 .category("Cultural")
                 .title("Loy Krathong")
@@ -44,7 +44,7 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .date("21 Nov")
                 .time("8.00-10.00 pm.")
                 .petAllowed(false)
-                .organizer("Chiang Mai").build());
+                .build());
         eventRepository.save(Event.builder()
                 .category("Cultural")
                 .title("SongKran")
@@ -53,15 +53,15 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
                 .date("13th April")
                 .time("10.00am - 6.00 pm.")
                 .petAllowed(true)
-                .organizer("Chiang Mai Municipality").build());
-        organizerRepository.save(Organizer.builder()
-                .organization("Fern Pollin")
-                .address("Flora City").build());
-        organizerRepository.save(Organizer.builder()
-                .organization("Carey Wales")
-                .address("Playa Del Carmen").build());
-        organizerRepository.save(Organizer.builder()
-                .organization("Dawg Dahd")
-                .address("Woof Town").build());
+                .build());
+//        organizerRepository.save(Organizer.builder()
+//                .organization("Fern Pollin")
+//                .address("Flora City").build());
+//        organizerRepository.save(Organizer.builder()
+//                .organization("Carey Wales")
+//                .address("Playa Del Carmen").build());
+//        organizerRepository.save(Organizer.builder()
+//                .organization("Dawg Dahd")
+//                .address("Woof Town").build());
     }
 }
