@@ -9,3 +9,4 @@ public interface OrganizerService {
     List<Organizer> getAllOrganizer();
     Page<Organizer> getOrganizer(Integer page, Integer pageSize);
 }
+
