@@ -15,5 +15,15 @@ spring:
         dialect: org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: create-drop
-      # creates tables every time, change to update later
-    
+  servlet:
+    multipart:
+      max-file-size: 10MB
+
+supabase:
+  storage:
+    endpoint: https://ilelidjqskinlqjxucuy.storage.supabase.co/storage/v1/s3
+    endpoint_output: https://ilelidjqskinlqjxucuy.storage.supabase.co/storage/v1/object/public
+    bucket: test
+    region: us-east-2
+    accessKey: 77212128a8cd38a08baddbd56408e0fd
+    secretKey: 048ce46b95bd79bdac0648b9b3782381a76beb00c93b045d8ba78741744f7e97

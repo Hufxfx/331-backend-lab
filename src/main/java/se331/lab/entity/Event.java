@@ -26,4 +26,6 @@ public class Event {
     Organizer organizer;
     @ManyToMany
     List<Participant> participants;
+    @ElementCollection
+    List<String> images;
 }
