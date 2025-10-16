@@ -24,6 +24,6 @@ public class Event {
     Boolean petAllowed;
     @ManyToOne
     Organizer organizer;
-    @ManyToMany(mappedBy = "eventHistory")
+    @ManyToMany
     List<Participant> participants;
 }
