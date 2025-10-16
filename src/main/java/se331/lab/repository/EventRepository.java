@@ -10,6 +10,7 @@ public interface EventRepository extends JpaRepository<Event, Long> {
     List<Event> findAll();
 
     Page<Event> findByTitle(String title, Pageable pageRequest);
+    Page<Event> findByOrganizer_Name(String title, Pageable pageRequest);
 
     Page<Event> findByTitleContaining(String title, Pageable pageRequest);
 
@@ -20,4 +21,7 @@ public interface EventRepository extends JpaRepository<Event, Long> {
     Page<Event> findByTitleIgnoreCaseContainingOrDescriptionIgnoreCaseContainingOrOrganizerIgnoreCaseContaining(String title, String description, String organizerName, Pageable pageRequest);
 
     Page<Event> findByTitleContainingOrDescriptionContainingOrOrganizerContaining(String title, String description, String organizerName, Pageable pageRequest);
+
+    Page<Event> findByTitleIgnoreCaseContainingOrDescriptionIgnoreCaseContainingOrOrganizer_NameIgnoreCaseContaining(
+            String title, String description, String organizerName, Pageable pageable);
 }
